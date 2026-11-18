@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slappy Collectives — Build For The Grind</title>
+  <meta name="description" content="Streetwear from Manila: oversized tees, 5 panel caps, cargo pants, hoodies and bags by Slappy Collectives.">
+  <meta property="og:title" content="Slappy Collectives — Build For The Grind">
+  <meta property="og:description" content="A fashionable street lifestyle collection to express your own culture and self.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path d="m18 6-12 12M6 6l12 12"/></symbol>
+      <symbol id="i-bag" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18M16 10a4 4 0 0 1-8 0"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+      <symbol id="i-fire" viewBox="0 0 24 24"><path d="M12 22c4 0 7-3 7-7 0-3-1.5-5.5-4-8 .2 3-1 4-2 4-1.5 0-2-2-1-7-4 2-7 6-7 11 0 4 3 7 7 7Z"/><path d="M9 18c0-2 1-3 3-5 0 2 3 2 3 5a3 3 0 0 1-6 0Z"/></symbol>
+      <symbol id="i-hand" viewBox="0 0 24 24"><path d="M8 13V5a2 2 0 0 1 4 0v7M12 12V3a2 2 0 0 1 4 0v9M16 12V5a2 2 0 0 1 4 0v9c0 5-3 8-8 8-3 0-5-1-7-4l-3-4a2 2 0 0 1 3-2l3 3"/></symbol>
+      <symbol id="i-shirt" viewBox="0 0 24 24"><path d="m20.4 5-4-3c-.8 1.2-2.4 2-4.4 2S8.4 3.2 7.6 2l-4 3L1 9l4 2v11h14V11l4-2Z"/></symbol>
+      <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></symbol>
+      <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 4 13c0-6 5-9 16-10-1 11-4 16-10 16"/><path d="M2 22c3-5 7-9 14-13"/></symbol>
+      <symbol id="i-cap" viewBox="0 0 24 24"><path d="M3 14a9 9 0 0 1 18 0v3H3ZM3 17h18c0 3-4 4-9 4s-9-1-9-4ZM12 5V2"/></symbol>
+      <symbol id="i-glasses" viewBox="0 0 24 24"><path d="M3 8h18M5 8l1 7a3 3 0 0 0 6 0V8M12 8v7a3 3 0 0 0 6 0l1-7M3 8 1 5M21 8l2-3"/></symbol>
+      <symbol id="i-sparkles" viewBox="0 0 24 24"><path d="m12 3 1.5 4.5L18 9l-4.5 1.5L12 15l-1.5-4.5L6 9l4.5-1.5ZM19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8ZM5 2l.8 2.2L8 5l-2.2.8L5 8l-.8-2.2L2 5l2.2-.8Z"/></symbol>
+      <symbol id="i-backpack" viewBox="0 0 24 24"><path d="M8 7V5a4 4 0 0 1 8 0v2M5 22V10a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v12ZM5 14H2v6h3M19 14h3v6h-3M8 13h8v5H8Z"/></symbol>
+      <symbol id="i-shoe" viewBox="0 0 24 24"><path d="M3 4v9c0 2 1 3 3 3l3 1 3 4h9a2 2 0 0 0 2-2c-5-1-8-4-10-8L9 8 8 4Z"/><path d="m9 9 3-2M11 12l3-2"/></symbol>
+      <symbol id="i-quote" viewBox="0 0 24 24"><path d="M3 21c3-1 5-4 5-8V5H2v8h4c0 3-1 5-3 6ZM14 21c3-1 5-4 5-8V5h-6v8h4c0 3-1 5-3 6Z"/></symbol>
+      <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 3 6 7 .9-5 4.8 1.2 6.8L12 17.3l-6.2 3.2L7 13.7 2 8.9 9 8Z"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.8.7a2 2 0 0 1 1.7 2Z"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+      <symbol id="i-truck" viewBox="0 0 24 24"><path d="M10 17h4V5H2v12h3M14 9h4l4 4v4h-3M14 17h1"/><circle cx="7.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></symbol>
+      <symbol id="i-card" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></symbol>
+      <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" class="fill-icon"/></symbol>
+      <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3Z"/></symbol>
+    </defs>
+  </svg>
+
+  <header class="site-header" id="site-header">
+    <div class="container nav-wrap">
+      <a href="#home" class="brand">SLAPPY <span>COLLECTIVES</span></a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#home">Home</a><a href="#about">About the Shop</a><a href="#products">Products</a><a href="#contact">Contact</a>
+      </nav>
+      <label class="search-box desktop-search">
+        <svg class="icon muted"><use href="#i-search"/></svg>
+        <span class="sr-only">Search products</span>
+        <input type="search" placeholder="Search products…" data-product-search>
+      </label>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="icon menu-icon"><use href="#i-menu"/></svg>
+        <svg class="icon close-icon"><use href="#i-close"/></svg>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <nav class="container" aria-label="Mobile navigation">
+        <a href="#home">Home</a><a href="#about">About the Shop</a><a href="#products">Products</a><a href="#contact">Contact</a>
+        <label class="search-box mobile-search">
+          <svg class="icon muted"><use href="#i-search"/></svg>
+          <span class="sr-only">Search products</span>
+          <input type="search" placeholder="Search products…" data-product-search>
+        </label>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero section-border">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Manila Streetwear · Est. Collective</p>
+          <h1>Build for <br><span>the grind</span></h1>
+          <p class="hero-copy">A fashionable street lifestyle collection to express your own culture and self.</p>
+          <div class="button-row">
+            <a href="#map" class="btn btn-gold"><svg class="icon"><use href="#i-pin"/></svg>Find Us</a>
+            <a href="#quicklist" class="btn btn-outline">View Menu</a>
+          </div>
+          <div class="tag-row"><span>Tees</span><span>Caps</span><span>Accessories</span></div>
+        </div>
+        <div class="hero-visual">
+          <img src="images/hero.jpg" alt="Model wearing an oversized black hoodie on a Manila street at dusk" width="1024" height="1280" class="hero-image">
+          <div class="drop-card"><p class="eyebrow">Drop 04</p><p>Fall / Winter capsule</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="products-section section-pad">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Featured</p>
+          <h2>Fresh off the rack</h2>
+          <p>Sample products and prices for this mockup.</p>
+        </div>
+        <p class="search-status" id="search-status" role="status" hidden></p>
+        <div class="product-grid" id="product-grid"></div>
+        <p class="empty-products" id="empty-products" hidden>No products match your search.</p>
+      </div>
+    </section>
+
+    <section id="about" class="section-pad">
+      <div class="container">
+        <div class="about-grid">
+          <img src="images/shop.jpg" alt="Inside the Slappy Collectives shop" loading="lazy" width="1280" height="1024" class="shop-image">
+          <div>
+            <div class="section-head">
+              <p class="eyebrow">About the Shop</p>
+              <h2>Why we're <span>different</span></h2>
+              <p>Slappy Collectives started as a crew of friends printing shirts for each other. Today it's a small shop for anyone who wears their culture on their sleeve.</p>
+            </div>
+            <div class="button-row compact-buttons">
+              <a href="#contact" class="btn btn-gold">Book a Table</a>
+              <a href="#quicklist" class="btn btn-outline">Our Story</a>
+            </div>
+          </div>
+        </div>
+        <div class="feature-grid" id="feature-grid"></div>
+      </div>
+    </section>
+
+    <section id="quicklist" class="quick-section section-pad">
+      <div class="container">
+        <div class="section-head centered">
+          <p class="eyebrow">Menu Quick List</p>
+          <h2>Shop by category</h2>
+        </div>
+        <div class="category-grid" id="category-grid"></div>
+      </div>
+    </section>
+
+    <section class="section-pad" id="reviews">
+      <div class="container">
+        <div class="section-head centered">
+          <p class="eyebrow">Reviews</p>
+          <h2>Customer Love</h2>
+          <p>Sample testimonials for this design mockup — not verified customer reviews.</p>
+        </div>
+        <div class="review-grid" id="review-grid"></div>
+        <div class="button-row centered-row">
+          <button class="btn btn-outline" id="view-reviews" type="button">View More</button>
+          <a class="btn btn-gold" href="#contact">Write a Review</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container promo-section">
+      <div class="promo-card">
+        <img src="images/street.jpg" alt="Crew in streetwear at night in the city" loading="lazy" width="1920" height="912">
+        <div class="promo-overlay"></div>
+        <div class="promo-content">
+          <p class="eyebrow">New season</p>
+          <h2>Find the fit that tells your story</h2>
+          <p>Discover your next favorite piece — fresh drops land in the shop every month.</p>
+          <a href="#products" class="btn btn-gold">Shop the Drop</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section section-pad">
+      <div class="container contact-grid">
+        <div>
+          <div class="section-head">
+            <p class="eyebrow">Get in touch</p>
+            <h2>Contact the Shop</h2>
+            <p>Questions about sizing, orders or collabs? Send us a message and we'll get back within a day.</p>
+          </div>
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <label>Full Name
+                <input name="name" autocomplete="name" placeholder="Juan Dela Cruz" aria-describedby="name-error">
+                <span class="field-error" id="name-error"></span>
+              </label>
+              <label>Email
+                <input name="email" type="email" autocomplete="email" placeholder="you@email.com" aria-describedby="email-error">
+                <span class="field-error" id="email-error"></span>
+              </label>
+            </div>
+            <label>Topic
+              <select name="topic" aria-describedby="topic-error">
+                <option value="" selected disabled>Select a topic</option>
+                <option>Order &amp; shipping</option><option>Sizing help</option><option>Collaboration</option><option>Other</option>
+              </select>
+              <span class="field-error" id="topic-error"></span>
+            </label>
+            <label>Message
+              <textarea name="message" rows="5" placeholder="Tell us what's up…" aria-describedby="message-error"></textarea>
+              <span class="field-error" id="message-error"></span>
+            </label>
+            <p id="form-status" class="form-status" role="status" hidden>Thanks! Your message is ready (demo only — not actually sent).</p>
+            <div class="button-row">
+              <a href="tel:+639000000000" class="btn btn-outline"><svg class="icon"><use href="#i-phone"/></svg>Call Us</a>
+              <button type="submit" class="btn btn-gold">Send Message</button>
+            </div>
+          </form>
+        </div>
+        <div class="contact-side">
+          <img src="images/hero.jpg" alt="Slappy Collectives street look" loading="lazy" width="1024" height="1280" class="contact-image">
+          <div class="hours-card">
+            <h3><svg class="icon gold"><use href="#i-clock"/></svg>Opening Hours</h3>
+            <p>Monday–Sunday · 7:00 AM–6:00 PM</p>
+            <div class="service-grid">
+              <p><svg class="icon gold"><use href="#i-truck"/></svg>Nationwide shipping</p>
+              <p><svg class="icon gold"><use href="#i-card"/></svg>GCash · Maya · Cards</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="map" class="section-pad">
+      <div class="container">
+        <div class="section-head"><p class="eyebrow">Location</p><h2>Visit the shop</h2></div>
+        <div class="map-placeholder" role="img" aria-label="Map placeholder for sample address Taugtog, Botolan">
+          <span class="map-label">Map placeholder</span>
+          <div class="map-card"><svg class="icon gold"><use href="#i-pin"/></svg><p>Taugtog, Botolan</p><span>Sample address — confirm before publishing</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <p class="brand footer-brand">SLAPPY <span>COLLECTIVES</span></p>
+        <p class="footer-copy">Street culture, made to be worn.</p>
+        <div class="social-row">
+          <a href="#home" aria-label="Instagram placeholder"><svg class="icon"><use href="#i-instagram"/></svg></a>
+          <a href="#home" aria-label="Facebook placeholder"><svg class="icon"><use href="#i-facebook"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-column"><h3 class="eyebrow">Visit</h3><p><svg class="icon gold"><use href="#i-pin"/></svg>Taugtog, Botolan*</p><p><svg class="icon gold"><use href="#i-clock"/></svg>Mon–Sun, 7:00 AM–6:00 PM</p></div>
+      <div class="footer-column"><h3 class="eyebrow">Contact</h3><p><svg class="icon gold"><use href="#i-phone"/></svg>+63 900 000 0000*</p><p><svg class="icon gold"><use href="#i-mail"/></svg>hello@slappycollectives.ph*</p></div>
+      <div class="footer-column"><h3 class="eyebrow">Explore</h3><a href="#home">Home</a><a href="#about">About the Shop</a><a href="#products">Products</a><a href="#contact">Contact</a></div>
+    </div>
+    <div class="footer-bottom"><div class="container"><p>© 2026 Slappy Collectives. All rights reserved.</p><p>* Placeholder details — confirm before publication.</p></div></div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>
